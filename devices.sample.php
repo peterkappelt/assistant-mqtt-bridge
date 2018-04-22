@@ -8,7 +8,7 @@ $devices[] = [
     'id' => 'testdev1',
     //The type of this virtual device. See https://developers.google.com/actions/smarthome/guides/
     'type' => 'action.devices.types.LIGHT',
-    //Available traits (features, functions) of this device. See https://developers.google.com/actions/smarthome/traits/
+    //Available traits (features, functions) of this device. See https://developers.google.com/actions/smarthome/traits/. Not all are supported yet
     'traits' => [
         'action.devices.traits.Brightness',
         'action.devices.traits.OnOff'
@@ -30,33 +30,6 @@ $devices[] = [
     'name' => 'Steckdose',
     'nicknames' => [
         'Steckdose Eins'
-    ]
-];
-
-$devices[] = [
-    'id' => 'wz_standlampen',
-    'type' => 'action.devices.types.LIGHT',
-    'traits' => [
-        'action.devices.traits.OnOff',
-        'action.devices.traits.Brightness'
-    ],
-    'name' => 'Wohnzimmerlampen',
-    'nicknames' => [
-        'Standlampen Wohnzimmer',
-        'Wohnzimmer Standlampen'
-    ]
-];
-
-$devices[] = [
-    'id' => 'peter_lichtwecker',
-    'type' => 'action.devices.types.LIGHT',
-    'traits' => [
-        'action.devices.traits.OnOff'
-    ],
-    'name' => 'Lichtwecker Peter',
-    'nicknames' => [
-        'Peter\'s Lichtwecker',
-        'Peters Lichtwecker'
     ]
 ];
 

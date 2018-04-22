@@ -7,6 +7,7 @@
     require_once('head.php');
     require_once('error.php');
     require_once('../config.php');
+    require_once('../sessionfix.php');
 
     //See https://developers.google.com/actions/identity/oauth2-implicit-flow for auth info
     //check parameters provided by Google
@@ -33,7 +34,7 @@
 
     // echo($_SERVER["SCRIPT_NAME"] . "?client_id=$client_id&response_type=$response_type&redirect_uri=$redirect_uri&state=$state")
 
-    var_dump(getallheaders());
+    //var_dump(getallheaders());
     //start session handling
     session_start();
 

@@ -1,6 +1,7 @@
 <?php
     require_once('devices.php');
     require_once('mqtt.php');
+    require_once('sessionfix.php');
 
     //response is always JSON
     header('Content-Type: application/json');

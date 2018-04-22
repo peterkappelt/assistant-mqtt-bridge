@@ -11,9 +11,12 @@
     $google_projectid = 'kappelt-smarthome-eb8cd';
 
     //MQTT broker settings
-    $mqtt_server = "mqtt1.int.kappelt.net"
+    $mqtt_server = 'mqtt1.int.kappelt.net';
     $mqtt_port = 1883;
     //leave username and password empty if it is not required
-    $mqtt_username = "";
-    $mqtt_password = "";
+    $mqtt_username = '';
+    $mqtt_password = '';
+
+    //path to store auth/ session information
+    $session_path = '/tmp/googlebridge/sessions/';
 ?>

@@ -13,7 +13,7 @@ function mqttHandleExecCmd($deviceIds, $execCmd){
     $message = "";
     if($execCmd['command'] === 'action.devices.commands.OnOff'){
         $topicSuffix = 'OnOff';
-        $message = $execCmd['params']['on'] ? 1:0;
+        $message = $execCmd['params']['on'] ? "on":"off";
     }elseif($execCmd['command'] === 'action.devices.commands.BrightnessAbsolute'){
         $topicSuffix = 'Brightness';
         $message = $execCmd['params']['brightness'];
